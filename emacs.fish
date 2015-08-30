@@ -2,7 +2,7 @@ function init --on-event init_emacs
   function __major_version
     if test -n "$argv"
       set -l full_metadata (eval $argv --version)
-      set -l full_version (echo $full_metadata | grep -o "[0-9]\+.[0-9]\+.[0-9]\+.[0-9]\+")
+      set -l full_version (echo $full_metadata | grep -o "[0-9]\+.[0-9]\+.[0-9]\+")
       set -l major_version (echo $full_version | sed  "s/\..*//")
     end
 
