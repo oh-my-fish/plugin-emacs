@@ -15,7 +15,7 @@ function init --on-event init_emacs
   end
 
   function __add_functions_to_path
-    set emacs_functions $fish_path/plugins/emacs/functions
+    set emacs_functions $OMF_PATH/pkg/emacs/functions
     set fish_function_path $emacs_functions $fish_function_path
   end
 
