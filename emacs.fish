@@ -4,9 +4,8 @@ function init --on-event init_emacs
       set -l full_metadata (eval $argv --version)
       set -l full_version (echo $full_metadata | grep -o "[0-9]\+.[0-9]\+.[0-9]\+")
       set -l major_version (echo $full_version | sed  "s/\..*//")
+      echo $major_version
     end
-
-    echo $major_version
   end
 
   function __set_editor
