@@ -22,7 +22,7 @@ function init --on-event init_emacs
   if not set -q __emacs
     set __emacs (which emacs)
   end
-    
+
   if not set -q __emacs_version
     set __emacs_version (__major_version $__emacs)
   end
@@ -32,8 +32,6 @@ function init --on-event init_emacs
     __add_functions_to_path
   end
 
-  set -e emacs
-  set -e emacs_version
   functions -e __major_version
   functions -e __set_editor
   functions -e __add_functions_to_path
