@@ -19,10 +19,10 @@ Benefits are multiple
 
 ### Usage
 
-To use this plugin add `emacs` to `fish_plugins` in you fish config file:
+To use this plugin, install it as:
 
 ```bash
-set fish_plugins emacs
+omf install emacs
 ```
 
 ### Requirements
