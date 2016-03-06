@@ -36,7 +36,3 @@ function init --on-event init_emacs
   functions -e __set_editor
   functions -e __add_functions_to_path
 end
-
-function emacs
-  __launch_emacs $argv --no-wait
-end
