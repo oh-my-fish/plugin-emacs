@@ -14,11 +14,6 @@ function init --on-event init_emacs
     end
   end
 
-  function __add_functions_to_path
-    set emacs_functions $OMF_PATH/pkg/emacs/functions
-    set fish_function_path $emacs_functions $fish_function_path
-  end
-
   if not set -q __emacs
     set __emacs (which emacs)
   end
@@ -29,10 +24,8 @@ function init --on-event init_emacs
 
   if test "$__emacs_version" -gt 23
     __set_editor
-    __add_functions_to_path
   end
 
   functions -e __major_version
   functions -e __set_editor
-  functions -e __add_functions_to_path
 end
