@@ -1,7 +1,7 @@
 function __major_version
   if test -n "$argv"
     set -l full_metadata (eval $argv --version)
-    set -l major_version (echo $full_metadata | sed -r  's/^[^0-9]*([0-9]+).*/\1/')
+    set -l major_version (echo $full_metadata | sed -E  's/^[^0-9]*([0-9]+).*/\1/')
     echo $major_version
   end
 end
