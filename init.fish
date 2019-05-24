@@ -1,3 +1,7 @@
+if not command -sq emacs
+  exit 0
+end
+
 function __major_version
   if test -n "$argv"
     set -l full_metadata (eval $argv --version)
