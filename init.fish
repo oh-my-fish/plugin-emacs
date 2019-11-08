@@ -20,8 +20,12 @@ if not set -q __emacs
   set __emacs (which emacs)
 end
 
+if not set -q __emacsclient
+  set __emacsclient (which emacsclient)
+end
+
 if not set -q __emacs_version
-  set __emacs_version (__major_version $__emacs)
+  set __emacs_version (__major_version $__emacsclient)
 end
 
 if test "$__emacs_version" -gt 23
