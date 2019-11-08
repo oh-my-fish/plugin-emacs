@@ -1,3 +1,3 @@
-function eframe -w emacsclient -d "Launch an emacsclient frame. Use 'e' if you want to use the old frame."
-  __launch_emacs $argv --create-frame --no-wait
+function eframe -w ec -d "Another name for function ec."
+  ec $argv
 end
