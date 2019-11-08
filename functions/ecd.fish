@@ -1,4 +1,4 @@
-function ecd
+function ecd -d "Get current directory of the Emacs server."
   set -l cmd '(let ((buf-name (buffer-file-name (window-buffer))))
              (if buf-name (file-name-directory buf-name)))'
   set -l dir (__launch_emacs --eval $cmd | tr -d '\"')
