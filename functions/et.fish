@@ -1,3 +1,3 @@
-function et
-  __launch_emacs $argv --tty
+function et -w emacsclient -d "Launch a TTY emacsclient."
+  __launch_emacs --tty $argv
 end

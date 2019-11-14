@@ -1,3 +1,3 @@
-function ek
-  __kill_emacs
+function ek -d "Kill emacs."
+  __kill_emacs $argv
 end

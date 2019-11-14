@@ -1,3 +1,9 @@
+# convenience
+abbr -a eeval e --eval
+# mispellings
+abbr -a emasc emacs
+abbr -a emcas emacs
+
 if not command -sq emacs
   exit 0
 end

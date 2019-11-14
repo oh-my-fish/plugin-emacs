@@ -1,3 +1,3 @@
-function e
-  __launch_emacs $argv --no-wait
+function e -w emacsclient -d "Launch emacsclient. Will use the current frame."
+  __launch_emacs --no-wait $argv
 end
